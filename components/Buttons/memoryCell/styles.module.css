@@ -1,22 +1,15 @@
 .memoryCellButton {
   width: 82px;
   height: 82px;
-  border: none;
-  background: var(--medium-dark-blue);
-  border-radius: 41px;
-  color: var(--medium-dark-blue);
-  cursor: pointer;
-}
-
-.revealed_memoryCell {
-  width: 82px;
-  height: 82px;
   font-weight: 700;
   font-size: 56px;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
   background: var(--lighter-cyan-blue);
   color: #fcfcfc;
   cursor: pointer;
+  border: none;
+  border-radius: 50%;
 }

@@ -3,6 +3,7 @@ import styles from './styles.module.css';
 
 type menuSelectionButtonProps = {
   buttonName: string;
+  id: string;
 };
 
 const makeButtonAvtive = () => {
@@ -14,13 +15,14 @@ const makeButtonAvtive = () => {
 };
 
 export const MenuSelectionbutton = (props: menuSelectionButtonProps) => {
-  const { buttonName } = props;
+  const { buttonName, id } = props;
 
   return (
     <button
       data-testid="button_element"
       className={styles.menuSelectionButton}
       onClick={makeButtonAvtive}
+      id={id}
     >
       {buttonName}
     </button>
